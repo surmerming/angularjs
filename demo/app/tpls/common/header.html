@@ -1,0 +1,24 @@
+<div class="df-header">
+    <div class="df-header-main">
+        <a ui-sref="index" class="df-header-logo df-inline-block">
+            <img src="http://img.diaobao.in/doufu/writing/logo.png">
+        </a>
+        <div class="df-header-nav-items">
+            <a class="df-header-nav-item df-block" ui-sref="index.drawing">
+                <div class="df-header-nav-item-text">绘画</div>
+            </a>
+            <a class="df-header-nav-item df-block" ui-sref="index.cos">
+                <div class="df-header-nav-item-text">COS</div>
+            </a>
+            <a class="df-header-nav-item df-block" ui-sref="index.novel">
+                <div class="df-header-nav-item-text">小说</div>
+            </a>
+        </div>
+        <div class="df-header-my-center df-right">
+            <a class="df-header-write df-left" ui-sref="index.my">发表</a>
+            <div class="df-header-login df-right" ng-init='nickname="登录"' ng-bind="nickname" ng-click="showLoginForm()"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

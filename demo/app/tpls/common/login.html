@@ -1,0 +1,27 @@
+<div class="df-login-dialog ng-hide" ng-hide="!bLoginShow">
+    <div class="df-login-dialog-bg"></div>
+    <div class="df-login-form">
+        <div class="df-login-form-container">
+            <div class="df-login-user">
+                <div class="df-login-user-left">
+                    <div class="df-login-user-icon"></div>
+                </div>
+                <input type="text" name="df-login-account" id="df-login-account" class="df-login-input ng-pristine ng-untouched ng-valid" placeholder="请输入邮箱/手机号" ng-model="account">
+            </div>
+            <div class="df-login-pwd">
+                <div class="df-login-pwd-left">
+                    <div class="df-login-pwd-icon"></div>
+                </div>
+                <input type="password" name="df-login-pwd" id="df-login-pwd" class="df-login-input ng-pristine ng-untouched ng-valid" placeholder="请输入密码" ng-model="password">
+            </div>
+            <div id="df-login-submit" class="df-login-submit" style="cursor: pointer;" ng-click="login()">登录</div>
+            <div class="df-other-login" style="margin-top: 30px;width: 340px;">
+                <div class="df-other-login-text df-left" style="color: #000;">一键登录</div>
+                <a class="df-qq-login-btn df-left" href="http://doufushe.com/index.php/site/login/qq"></a>
+                <a class="df-wb-login-btn df-left" href="http://doufushe.com/index.php/site/login/wb"></a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="df-login-form-close" ng-click="hideLoginForm()"></div>
+    </div>
+</div>

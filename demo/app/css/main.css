@@ -1,0 +1,228 @@
+html{
+    font-family: "Helvetica Neue", Helvetica, Microsoft YaHei, 'å¾®è½¯é›…é»‘', Arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: #7D7D7D;
+    font-weight: 400;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.clearfix{
+    clear: both;
+}
+ul,li{
+    list-style: none;
+}
+.df-block{
+    display: block;
+}
+.df-inline-block{
+    display: inline-block;
+}
+.df-inline{
+    display: inline;
+}
+.df-left{
+    float: left;
+}
+.df-right{
+    float: right;
+}
+.df-container{
+    width: 100%;
+    height: 100%;
+}
+.df-header{
+    width: 100%;
+    background-color: #FB6E70;
+    color: #ffffff;
+    text-align: center;
+}
+.df-header-main{
+    width: 1000px;
+    margin: 0 auto;
+    height: 100px;
+    line-height: 1;
+}
+.df-header-logo{
+    float: left;
+    margin: 22px 0;
+}
+.df-header-nav-items{
+    float: left;
+    margin: 22px 0 22px 60px;
+    font-size: 16px;
+}
+.df-header-nav-item{
+    height: 56px;
+    width: 80px;
+    float: left;
+    line-height: 56px;
+    margin-right: 40px;
+}
+.df-header-my-center{
+    padding: 22px;
+    height: 56px;
+    line-height: 56px;
+}
+.df-header-write{
+    margin-right: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.df-header-login{
+    cursor: pointer;
+}
+.df-login-dialog{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.df-login-dialog-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.df-login-form{
+    width: 380px;
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 999999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -170px;
+    margin-top: -157px;
+    border-radius: 5px;
+}
+.df-login-form-container{
+    padding: 20px;
+}
+.df-login-user{
+    text-align: center;
+    position: relative;
+}
+.df-login-user-left{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 0px;
+}
+.df-login-user-icon{
+    width: 20px;
+    height: 20px;
+    margin: 14px;
+    background: url(http://img.diaobao.in/doufu/topic/icon.png) no-repeat;
+    background-position: -101px -36px;
+}
+input.df-login-input{
+    width: 260px;
+    border: 1px solid #ebebeb;
+    text-indent: 0px;
+    outline: 0;
+    padding: 13px 28px 13px 48px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: inherit;
+}
+input.df-login-input:focus{
+    box-shadow: 0px 0px 3px #A1A19E;
+    background-color: #ffffff;
+    -moz-box-shadow: 0px 0px 3px #A1A19E;
+    -webkit-box-shadow: 0px 0px 3px #A1A19E;
+    box-shadow: 0px 0px 3px #A1A19E;
+    border-width: 0px;
+    border: 1px solid #ffffff;
+    -webkit-transition: border linear .2s,box-shadow linear .2s;
+    -moz-transition: border linear .2s,box-shadow linear .2s;
+    -o-transition: border linear .2s,box-shadow linear .2s;
+    transition: border linear .2s,box-shadow linear .2s;
+}
+.df-login-pwd{
+    margin-top: 20px;
+    position: relative;
+}
+.df-login-pwd-left{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 0px;
+}
+.df-login-pwd-icon{
+    width: 20px;
+    height: 20px;
+    margin: 14px;
+    background: url(http://img.diaobao.in/doufu/topic/icon.png) no-repeat;
+    background-position: -141px -36px;
+}
+.df-login-submit{
+    width: 120px;
+    height: 48px;
+    line-height: 48px;
+    background: #FB6E70;
+    border: none;
+    margin: 40px auto 0 auto;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: 0;
+}
+.df-qq-login-btn{
+    background: url(http://img.diaobao.in/doufu/res/static/qq_login_icon.png);
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    margin-right: 10px;
+}
+.df-wb-login-btn{
+    background: url(http://img.diaobao.in/doufu/res/static/wb_login_icon.png);
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+}
+.df-other-login-text{
+    color: #000;
+    line-height: 40px;
+    margin-right: 20px;
+}
+.df-login-form-close{
+    background: url("http://img.diaobao.in/doufu/year/one/award_rule_close.png");
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+}
+.df-main{
+    width: 100%;
+    min-height: 895px;
+}
+.df-main-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.df-main-left{
+    width: 200px;
+    float: left;
+}
+.df-my-nav-items{
+    font-size: 16px;
+}
+.df-my-nav-item{
+    line-height: 50px;
+    display: block;
+}
+.df-main-right{
+
+}
