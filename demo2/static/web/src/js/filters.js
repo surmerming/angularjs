@@ -1,9 +1,8 @@
-var bookStoreFilters = angular.module('bookStoreFilters', []);
-
-bookStoreFilters.filter('bookStoreFilter_1', ['$scope',
-    function($scope) {}
-]);
-
-bookStoreFilters.filter('bookStoreFilter_2', ['$scope',
-    function($scope) {}
-]);
+define(['angular'], function(angular) {
+	angular.module('filters', [])
+	.filter('filter1',function(){
+	    return function(item){
+	        return item + 'o(∩_∩)o';
+	    }
+	});  
+});

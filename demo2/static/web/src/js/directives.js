@@ -1,9 +1,8 @@
-define(['app'], function(app){
-    app.directive("love", function() {
-        return {
-            restrict: 'AE',
-            template: '<div>love.html</div>',
-            replace: true
-        };
-    });
+define(['angular', 'services'], function(angular) {
+    angular.module('doufu.directives', ['doufu.services'])  
+        .directive('appVersion', ['version', function(version) {  
+            return function(scope, elm, attrs) {  
+                elm.text(version);  
+        };  
+    }]);   
 });

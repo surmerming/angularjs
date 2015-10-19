@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl: 'http://rs.doufushe.com/static/',
+    baseUrl: './static/',
     paths: {
         'angular': 'common/lib/angular/angular.min',
         'angular-router': 'common/lib/angular/angular-ui-router',
@@ -21,6 +21,19 @@ requirejs.config({
         'services': { deps: ['angular'] },
         'filters': { deps: ['angular'] }
     },
-    deps:['bootstrap'],
+    deps:['app'],
     urlArgs: "bust=" + (new Date()).getTime()  //防止读取缓存，调试用
 });
+
+/*require([
+    'angular',
+    'app'
+    ], function(angular, app) {
+        var $html = angular.element(document.getElementsByTagName('html')[0]);
+        angular.element().ready(function() {
+            // bootstrap the app manually
+            angular.bootstrap(document, ['doufu']);
+        });
+    }
+);
+*/
