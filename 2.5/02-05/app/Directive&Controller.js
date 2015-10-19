@@ -22,3 +22,10 @@ myModule.directive("loader", function() {
         }
     } 
 });
+myModule.directive("love", function() {
+    return {
+        restrict: 'AE',
+        templateUrl: 'love.html',
+        replace: true
+    };
+});

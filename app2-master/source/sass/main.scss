@@ -1,0 +1,75 @@
+$border-radius-base: 0;
+$input-border-focus: #ECECEC;
+
+$primary-color: #434a4a;
+$light-border-color: #ECECEC;
+
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/bootstrap";
+@import "../css/fontello/css/fontello.css";
+
+@import "buttons";
+@import "inputs";
+@import "placeholders";
+
+@import "main-menu";
+@import "empty-box";
+@import "feed";
+@import "topics";
+@import "connections";
+@import "welcome";
+@import "account";
+@import "favorites";
+@import "collections";
+
+body {
+	font-family: 'Source Sans Pro', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: $primary-color;
+}
+
+h1, h2, h3 {
+	font-family: 'Hind', sans-serif;
+	font-weight: 600;
+}
+
+p {
+	word-spacing: 3px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+a, a:visited, a:focus, a:active, a:hover, button {
+    outline:0 none !important;
+}
+
+.content {
+	margin-left: 180px;
+
+	.wrapper {
+		display: block;
+		position: relative;
+		padding: 20px 120px;
+		margin: 0 auto;
+	}
+
+	.huge {
+		font-size: 2.6em;
+	}
+
+	.facebook {
+		color: #3c599f;
+	}
+
+	.twitter {
+		color: #33c6f4;
+	}
+
+	.vimeo {
+		color: #62a0ad;
+	}
+
+	.youtube {
+		color: #c0392b;
+	}
+}

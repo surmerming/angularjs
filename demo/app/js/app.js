@@ -19,28 +19,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('index', {
             url: '/index',
             views: {
-                '': {
-                    templateUrl: 'tpls/home/index.html'
-                },
-                'header@index': {
-                    templateUrl: 'tpls/common/header.html',
-                    controller: headerCtrl
-                },
-                'footer@index': {
-                    templateUrl: 'tpls/common/footer.html',
-                    controller: footerCtrl
-                },
                 'main@index': {
                     templateUrl: 'tpls/home/main.html'
                 }
             }
         })
-        .state('index.drawing', {
+        .state('drawing', {
             url: '/drawing',
             views: {
-                '': {
-                    templateUrl: 'tpls/drawing/index.html'
-                },
                 'main@index': {
                     templateUrl: 'tpls/drawing/main.html'
                 }
@@ -79,12 +65,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-        .state('index.my.drawing', {
-            url: '/drawing',
-            views: {
-                'myContent@index': {
-                    templateUrl: 'tpls/my/drawing/main.html'
-                }
-            }
-        })
+});
+
+app.directive("love", function() {
+    return {
+        restrict: 'AE',
+        template: '<div>love.html</div>',
+        replace: true
+    };
 });

@@ -1,0 +1,41 @@
+.main-menu {
+	position: fixed;
+	display: block;
+	width: 190px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-right: 1px solid $light-border-color;
+
+	.wrapper {
+		margin: 0 auto;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	ul li {
+		margin-top: 14px;
+		list-style-type: none;
+
+		a {
+			i {
+				font-size: 1.2em;
+				margin-right: 3px;
+			}
+
+			color: lighten($primary-color, 50%);
+			line-height: 1.3em;
+			text-decoration: none;
+		}
+
+		a:hover, a.current {
+			color: lighten($primary-color, 30%);
+		}
+	}
+
+	.menu-group {
+		padding: 20px;
+	}
+}
